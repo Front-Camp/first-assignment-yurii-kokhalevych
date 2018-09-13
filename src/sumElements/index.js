@@ -6,12 +6,18 @@
  * @param {Array<number|string>} arr - this is an array of numbers or strings
  * @return {number} - sum of all numbers of array
  * @example
- * sumElements([1, 2, 3]);          // 6
+ * c;          // 6
  * sumElements(['1', 'hi', 3]);     // 4
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+ let sum = 0;
+ for (const x of arr) {
+  if (typeof x === 'number' || parseInt(x)) {
+    sum =+x;
+  }
+ }
+  return sum;
 };
 
 export default sumElements;

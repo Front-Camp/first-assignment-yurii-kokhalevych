@@ -9,7 +9,13 @@
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
 const twoSums = (arr, base) => {
-  /* your logic here...*/
+  const newArr = [];
+  for(let i =0 ; i<arr.length; i++) {
+     if(arr[i] + arr[i+1] === base) {
+       newArr.push(arr[i], arr[i+1]);
+     };
+  }
+  return newArr
 };
 
 export default twoSums;

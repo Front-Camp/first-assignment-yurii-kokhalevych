@@ -6,7 +6,9 @@
  * getFlags(arr); // [1, 2, 3, 4, 5, 6]
  */
 const getFlags = arr => {
-  /* your logic here...*/
+  const dataArray = []
+  	arr.map(x => x.flags.map(y =>dataArray.push(y)))
+  return dataArray
 };
 
 export default getFlags;
